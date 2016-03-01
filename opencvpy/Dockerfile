@@ -11,7 +11,7 @@ COPY build.sh /build.sh
 RUN bash /build.sh \
     && rm /build.sh
 
-RUN rm -rf /var/lib/apt/lists/
-RUN apt-get purge -y cmake build-essential python3-dev git
+RUN apt-get purge -y cmake build-essential git
 RUN apt-get autoremove -y
 RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/
