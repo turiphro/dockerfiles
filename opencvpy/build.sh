@@ -2,7 +2,7 @@
 # Build OpenCV from source
 # Based on https://github.com/siomiz/node-opencv/blob/master/build.sh
 
-git clone htts://github.com/itseez/opencv.git /usr/local/src/opencv
+git clone https://github.com/itseez/opencv.git /usr/local/src/opencv
 
 cd /usr/local/src/opencv
 
