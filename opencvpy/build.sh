@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # Build OpenCV from source
 # Based on https://github.com/siomiz/node-opencv/blob/master/build.sh
 
