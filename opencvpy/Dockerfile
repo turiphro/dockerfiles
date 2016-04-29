@@ -8,7 +8,7 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends cmake build-essential python3-pip python3-numpy python3-scipy python3-dev libeigen3-dev libdc1394-22-dev libjpeg-dev libpng-dev libtiff.dev libjasper-dev libssl-dev git
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends cmake build-essential python3-pip python3-numpy python3-scipy python3-dev python3-setuptools libeigen3-dev libdc1394-22-dev libjpeg-dev libpng-dev libtiff.dev libjasper-dev libssl-dev git
 # for GUI, also install apt-get libgtk2.0-dev
 
 ENV OPENCV_VERSION 3.1.0
