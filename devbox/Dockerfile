@@ -24,12 +24,13 @@ RUN rm -rf /var/lib/apt/lists/
 #TODO setup user, set same permissions
 RUN addgroup --quiet --gid 1000 developer && adduser --quiet --disabled-password --gecos "Developer" --ingroup developer developer
 RUN chsh developer -s /usr/bin/fish
+RUN mkdir -p /home/developer/homedir
 
 # copy configs
-COPY etc/.vimrc /home/developer/
-COPY etc/.vim /home/developer/
+COPY etc/.vimrc /home/developer/.vimrc
+COPY etc/.vim /home/developer/.vim
 
 # setup running environment
 USER developer
-WORKDIR /home/developer
+WORKDIR /home/developer/homedir
 ENTRYPOINT /usr/bin/fish
